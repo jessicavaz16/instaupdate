@@ -908,6 +908,9 @@ body {
   .main-content {
     width: 75%;
   }
+  .suggest-close{
+    font-size: 1em;
+}
 }
 @media only screen and (max-width: 750px) {
   .main-content {
@@ -974,9 +977,7 @@ body {
   .sidebar {
     display: block;
   }
-  .suggest-close{
-    font-size: 1em;
-}
+
 }
 
 @media only screen and (max-width: 500px) {

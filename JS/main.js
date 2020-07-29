@@ -67,8 +67,8 @@ document.querySelector(".expand-add-acc").addEventListener("click", function () 
 
 var sidebar = document.querySelector(".sidebar");
 
-document.querySelector(".card").addEventListener("touchstart", startTouch, false);
-document.querySelector(".card").addEventListener("touchmove", moveTouch, false);
+document.querySelector(".posts").addEventListener("touchstart", startTouch, false);
+document.querySelector(".posts").addEventListener("touchmove", moveTouch, false);
 document.querySelector(".sidebar").addEventListener("touchmove", moveTouch2, false);
 
 // Swipe Up / Down / Left / Right

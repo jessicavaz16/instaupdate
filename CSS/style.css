@@ -739,9 +739,6 @@ background-color:gainsboro ;
     align-items: center;
     flex-wrap: nowrap;
 }
-.stories .scroll-stories::-webkit-scrollbar-track {
-    background-color: black;
-}
 .stories .scroll-stories::-webkit-scrollbar{
     height: 4px;
   background-color: red;

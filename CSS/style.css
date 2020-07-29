@@ -743,8 +743,7 @@ background-color:gainsboro ;
     height: 4px;
   background-color: red;
 }
-.stories .scroll-stories::-webkit-scrollbar{
-    background-color:blue;
+
 }
  .stories .scroll-stories .storie {
     margin: 0 0 0 1em;

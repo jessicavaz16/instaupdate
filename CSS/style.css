@@ -986,4 +986,7 @@ body {
   .icon-wrap .icon {
     display: block;
   }
+  .suggest-close{
+      font-size: 1em;
+  }
 }

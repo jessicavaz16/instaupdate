@@ -721,6 +721,7 @@ background-color:gainsboro ;
     flex-grow: 1;
     overflow: auto;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
  .stories {
     min-height: 103px;
@@ -738,8 +739,15 @@ background-color:gainsboro ;
     align-items: center;
     flex-wrap: nowrap;
 }
- .stories .scroll-stories::-webkit-scrollbar {
-    width: 0;
+.stories .scroll-stories::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+.stories .scroll-stories::-webkit-scrollbar{
+    height: 4px;
+  background-color: transparent;
+}
+.stories .scroll-stories::-webkit-scrollbar{
+    background-color: rgba(255, 255, 255, 0.5);
 }
  .stories .scroll-stories .storie {
     margin: 0 0 0 1em;
@@ -758,6 +766,9 @@ background-color:gainsboro ;
     padding: 3px;
     display: inline-block;
     position: relative;  
+}
+.stories .scroll-stories .storie .photo.inactive {
+    background:#cfcece;
 }
  .stories .scroll-stories .storie .photo img {
     width: calc(66px - 6px);
@@ -800,6 +811,102 @@ background-color:gainsboro ;
     height: 20px;
     border-radius: 50%;
   }
+
+  .suggestion-title{
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.25em 0.75em 1em 0.75em;
+}
+.see-all{
+    color: #0072B1;
+    font-size: 0.95em;
+    display: block;
+    cursor: pointer;
+}
+.suggestions-list{
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+    padding-bottom: 0.5em;
+}
+.suggestions-list::-webkit-scrollbar {
+    width: 0;
+}
+.suggestion{
+    width: 11em;
+    padding: 0.75em 0.85em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: white;
+    border: 1px solid gainsboro;
+    border-radius: 5px;
+    margin: 0 0.3em;
+}
+.suggest-close{
+    position: absolute;
+    top: 0.5em;
+    right: 0.75em;
+    color: gray;
+    font-size: 0.85em;
+    opacity: 0.75;
+}
+.suggest-img{
+    width: 5.5em;
+    height: 5.5em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.suggest-name{
+    width: 8em;
+    font-size: 1em;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.5em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+.suggest-info{
+    font-size: 0.75em;
+    color: gray;
+    text-align: center;
+    margin-top: 0.25em;
+    margin-bottom: auto;
+}
+.follow-button{
+    width: 100%;
+    padding: 0.35em 1em;
+    text-align: center;
+    border: none;
+    background-color: #0382c7;
+    border-radius: 4px;
+    font-size: 0.95em;
+    color: white;
+    font-weight: 500;
+    margin-top: 0.75em;
+    cursor: pointer;
+}
+.follow-button:hover{
+    background-color: #1571c7;
+}
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width:1300px){
     .main-navbar{
@@ -923,7 +1030,6 @@ background-color:gainsboro ;
     }
     .card {
     margin-bottom: 0.6em;
-   box-shadow: -1px 20px 0px 0px #dddddd61;
 }
 }
 @media only screen and (max-width:360px){

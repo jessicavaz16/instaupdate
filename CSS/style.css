@@ -757,6 +757,7 @@ background-color:gainsboro ;
       );
     padding: 3px;
     display: inline-block;
+   
 }
  .stories .scroll-stories .storie .photo img {
     width: calc(66px - 6px);
@@ -770,6 +771,34 @@ background-color:gainsboro ;
     color: #000;
 }
 
+.live-text {
+     padding: 2px 4px;
+     font-size: 10px;
+    background-color: red;
+    color: #FFF;
+    border-radius: 4px;
+    display: block;
+    position: absolute;
+   margin-left: 30px;
+  top:130px;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%); 
+  }
+  .storie.live .photo {
+     background:red !important;
+  }
+  .add-story {
+    position: absolute;
+    display: block;
+    margin-left: 40px;
+    top: 128px;
+    background-color: #4d97f0;
+    color: #FFF;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    font-size: 14px;
+  }
 
 @media only screen and (max-width:1300px){
     .main-navbar{
@@ -885,7 +914,14 @@ background-color:gainsboro ;
         display: block;
     }
 
+    .live-text{
+        top:125px;
+    }
+    .add-story{
+        top:123px;
+    }
 }
+
 @media only screen and (max-width:500px){
     .container{
         font-size: 0.95em;
@@ -894,11 +930,23 @@ background-color:gainsboro ;
     margin-bottom: 0.6em;
    box-shadow: -1px 20px 0px 0px #dddddd61;
 }
+.live-text{
+    top:120px;
+}
+.add-story{
+    top:118px;
+}
 }
 @media only screen and (max-width:360px){
     .icon-wrap span{
        display:none;
     } .icon-wrap .icon{
        display:block;
+    }
+    .live-text{
+        top:120px;
+    }
+    .add-story{
+        top:118px;
     }
 }

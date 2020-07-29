@@ -65,11 +65,7 @@ document.querySelector(".expand-add-acc").addEventListener("click", function () 
     document.querySelector(".all-uls").classList.toggle("show-add-acc")
 })
 
-var sidebar = document.querySelector(".sidebar");
 
-document.querySelector(".posts").addEventListener("touchstart", startTouch, false);
-document.querySelector(".posts").addEventListener("touchmove", moveTouch, false);
-document.querySelector(".sidebar").addEventListener("touchmove", moveTouch2, false);
 
 // Swipe Up / Down / Left / Right
 var initialX = null;

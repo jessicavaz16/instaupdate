@@ -721,7 +721,7 @@ background-color:gainsboro ;
     flex-grow: 1;
     overflow: auto;
     overflow-x: hidden;
-    -webkit-overflow-scrolling: touch;
+     -webkit-overflow-scrolling: touch
 }
  .stories {
     min-height: 103px;
@@ -739,11 +739,8 @@ background-color:gainsboro ;
     align-items: center;
     flex-wrap: nowrap;
 }
-.stories .scroll-stories::-webkit-scrollbar{
-    height: 4px;
-  background-color: red;
-}
-
+ .stories .scroll-stories::-webkit-scrollbar {
+    width: 0;
 }
  .stories .scroll-stories .storie {
     margin: 0 0 0 1em;

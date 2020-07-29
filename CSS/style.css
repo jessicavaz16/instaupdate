@@ -730,6 +730,11 @@ body {
 .stories .scroll-stories .storie .photo.inactive {
   background: #cfcece;
 }
+
+.stories .scroll-stories .storie .photo.user {
+    background: #fff;
+  }
+
 .stories .scroll-stories .storie .photo img {
   width: calc(66px - 6px);
   height: calc(66px - 6px);

@@ -740,14 +740,14 @@ background-color:gainsboro ;
     flex-wrap: nowrap;
 }
 .stories .scroll-stories::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: black;
 }
 .stories .scroll-stories::-webkit-scrollbar{
     height: 4px;
-  background-color: transparent;
+  background-color: red;
 }
 .stories .scroll-stories::-webkit-scrollbar{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color:blue;
 }
  .stories .scroll-stories .storie {
     margin: 0 0 0 1em;
